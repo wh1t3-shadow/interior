@@ -153,13 +153,13 @@
 
       $('#calcAreaSlider').on('input', function() {
         self.area = parseInt($(this).val());
-        $('#calcAreaDisplay').text(`${self.area.toLocaleString('bn-BD')} Sq.Ft`);
+        $('#calcAreaDisplay').text(`${self.area.toLocaleString('en-US')} Sq.Ft`);
         self.calculate();
       });
 
       $('#calcQuoteBtn').on('click', function(e) {
         e.preventDefault();
-        showToast('✅ আপনার প্রজেক্টের প্রাথমিক প্রাক্কলন ও কোটেশন ফাইল তৈরি হয়েছে!');
+        showToast('✅ Project scope and preliminary quotation specification prepared!');
       });
     }
 
@@ -183,26 +183,22 @@
       const electricSmartShare = Math.round(totalCostBDT * 0.18);
       const designFeeShare = Math.round(totalCostBDT * 0.12);
 
-      $('#costBreakdownCivil').text(this.formatBDT(civilShare));
-      $('#costBreakdownWood').text(this.formatBDT(woodMarbleShare));
-      $('#costBreakdownSmart').text(this.formatBDT(electricSmartShare));
-      $('#costBreakdownDesign').text(this.formatBDT(designFeeShare));
+      $('#costBreakdownCivil').text(this.formatCurrency(civilShare));
+      $('#costBreakdownWood').text(this.formatCurrency(woodMarbleShare));
+      $('#costBreakdownSmart').text(this.formatCurrency(electricSmartShare));
+      $('#costBreakdownDesign').text(this.formatCurrency(designFeeShare));
 
-      $('#calcTotalCost').text(this.formatBDTLakhCrore(totalCostBDT));
+      $('#calcTotalCost').text(this.formatTotal(totalCostBDT));
     }
 
-    formatBDT(val) {
-      return `৳ ${val.toLocaleString('en-IN')}`;
+    formatCurrency(val) {
+      const usd = Math.round(val / 120);
+      return `$ ${usd.toLocaleString('en-US')}`;
     }
 
-    formatBDTLakhCrore(val) {
-      if (val >= 10000000) {
-        const crore = (val / 10000000).toFixed(2);
-        return `৳ ${crore} কোটি`;
-      } else {
-        const lakh = (val / 100000).toFixed(1);
-        return `৳ ${lakh} লাখ`;
-      }
+    formatTotal(val) {
+      const usd = Math.round(val / 120);
+      return `$ ${usd.toLocaleString('en-US')} USD`;
     }
   }
 
@@ -263,18 +259,34 @@
 
     $('#mobileMenuToggle').on('click', function(e) {
       e.stopPropagation();
-      $('#navMenu').toggleClass('mobile-open');
+      const $menu = $('#navMenu');
+      const $btn = $(this);
+      const isOpen = $menu.hasClass('mobile-open');
+
+      if (isOpen) {
+        $menu.removeClass('mobile-open');
+        $btn.removeClass('active');
+        $('body').removeClass('menu-open-lock');
+      } else {
+        $menu.addClass('mobile-open');
+        $btn.addClass('active');
+        $('body').addClass('menu-open-lock');
+      }
     });
 
     // Auto close drawer when nav link is tapped on mobile
     $('#navMenu a').on('click', function() {
       $('#navMenu').removeClass('mobile-open');
+      $('#mobileMenuToggle').removeClass('active');
+      $('body').removeClass('menu-open-lock');
     });
 
     // Close mobile drawer when clicking outside
     $(document).on('click', function(e) {
       if (!$(e.target).closest('#siteHeader').length) {
         $('#navMenu').removeClass('mobile-open');
+        $('#mobileMenuToggle').removeClass('active');
+        $('body').removeClass('menu-open-lock');
       }
     });
 
@@ -284,18 +296,18 @@
       const title = $(this).find('.quad-hover-info span').text();
       $('#featuredVideoImg').attr('src', fullImg);
       $('#featuredVideoTitle').text(title);
-      showToast(`📸 ${title} গ্যালারি ফটো প্রিভিউ লোড হয়েছে`);
+      showToast(`📸 Preview loaded: ${title}`);
     });
 
     // Video Trigger Preview
     $('#videoPlayTrigger').on('click', function() {
-      showToast('🎬 ৪K আর্কিটেকচারাল সাইট ভার্চুয়াল ভিডিও প্লেব্যাক শুরু হয়েছে!');
+      showToast('🎬 4K Architectural drone scan playback started!');
     });
 
     // Form submission
     $('#consultationForm').on('submit', function(e) {
       e.preventDefault();
-      showToast('🎉 ধন্যবাদ! আপনার ফ্রি সাইট ভিজিট ও আর্কিটেকচারাল কনসালটেশন বুকিং সফল হয়েছে।');
+      showToast('🎉 Thank you! Your architectural consultation booking has been submitted.');
       this.reset();
     });
   }
@@ -331,7 +343,7 @@
           viewerEl.setAttribute('src', window.HERO_3D_MODELS[key]);
         } else if (key === 'luxuryVilla') {
           if (window.location.protocol === 'file:') {
-            showToast('💡 মেগা লাক্সারি ভিলা দেখতে "start.bat" ডাবল ক্লিক করে লোকাল সার্ভারে ওপেন করুন।');
+            showToast('💡 Please launch via local server to load high-poly architectural GLB models.');
             viewerEl.setAttribute('src', window.HERO_3D_MODELS.modernBuilding);
           } else {
             viewerEl.setAttribute('src', 'models/luxury_villa.glb');

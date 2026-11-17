@@ -26,10 +26,10 @@
 
       // Milestone definitions for the 3-Year Residential Construction Timelapse (lukerm/cv-building-timelapse)
       this.milestones = [
-        { name: 'গ্রাউন্ড ব্রেকিং ও বেসমেন্ট খনন', start: 1, end: 40 },
-        { name: 'কংক্রিট ফ্রেম ও ফ্লোর নির্মাণ', start: 41, end: 90 },
-        { name: 'ব্রিকওয়ার্ক ও উইন্ডো গ্লেজিং', start: 91, end: 135 },
-        { name: 'পূর্ণাঙ্গ রেসিডেন্সিয়াল আর্কিটেকচার', start: 136, end: 170 }
+        { name: 'Groundbreaking & Substructure Excavation', start: 1, end: 40 },
+        { name: 'Reinforced Concrete Core & Superstructure', start: 41, end: 90 },
+        { name: 'Brickwork, Glazing & Facade Envelope', start: 91, end: 135 },
+        { name: 'Completed Architectural Residence', start: 136, end: 170 }
       ];
 
       this.init();
@@ -152,7 +152,7 @@
       // Find current milestone
       const ms = this.milestones.find(m => frameNum >= m.start && frameNum <= m.end) || this.milestones[0];
       $('#seqMilestoneName').text(ms.name);
-      $('#seqFrameNumber').text(`ফ্রেম: ${frameNum} / ${this.totalFrames}`);
+      $('#seqFrameNumber').text(`Frame: ${frameNum} / ${this.totalFrames}`);
 
       // Update milestone pill active states
       $('.seq-milestone-pill').each(function() {

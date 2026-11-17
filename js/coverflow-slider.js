@@ -20,55 +20,73 @@
         {
           id: 1,
           category: 'villa',
-          categoryLabel: 'লাক্সারি ভিলা',
-          title: 'দ্য ইম্পেরিয়াল স্কাই ডুপ্লেক্স ভিলা',
-          desc: '৮,৫০০ বর্গফুটের ট্রিপ্লেক্স স্থাপত্য। ইতালিয়ান মার্বেল, স্মার্ট হোম অটোমেশন ও প্রাইভেট রুফটপ ইনফিনিটি পুল সমৃদ্ধ।',
+          categoryLabel: 'Luxury Villa',
+          title: 'The Imperial Sky Duplex Villa',
+          desc: '8,500 sq. ft. triplex residence engineered with imported Calacatta marble, smart home automation, and an expansive private rooftop infinity pool.',
           photo: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=85',
           link: '#contactSection'
         },
         {
           id: 2,
           category: 'commercial',
-          categoryLabel: 'কমার্শিয়াল টাওয়ার',
-          title: 'লুমিনা আইকনিক হেডকোয়ার্টার্স টাওয়ার',
-          desc: '২৮ তলা বিশিষ্ট গ্রিন বিল্ডিং সার্টিফায়েড কমার্শিয়াল স্কাইস্ক্র্যাপার। লো-ই গ্লাস কার্টেইন ওয়াল ও সিসমিক জোন-৪ রেজিস্ট্যান্ট।',
+          categoryLabel: 'Commercial Tower',
+          title: 'Lumina Iconic Headquarters Tower',
+          desc: '28-story LEED Gold certified commercial landmark. High-performance Low-E acoustic curtain glazing with Seismic Zone-4 structural resilience.',
           photo: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=85',
           link: '#contactSection'
         },
         {
           id: 3,
           category: 'penthouse',
-          categoryLabel: 'পেন্টহাউস ইন্টেরিয়র',
-          title: 'অ্যাম্বিয়েন্স লাক্সারি পেন্টহাউস রিট্রিট',
-          desc: 'আমেরিকান ব্ল্যাক ভ্যালনাট উডওয়ার্ক, অ্যাকোস্টিক ওয়াল প্যানেল ও বিলাসবহুল মাস্টার সুইটসহ আধুনিক ইন্টেরিয়র স্পেস।',
+          categoryLabel: 'Penthouse Interior',
+          title: 'Ambience Sky Penthouse Retreat',
+          desc: 'American black walnut millwork, acoustic fluted wall architecture, double-height living volume, and panoramic 360-degree city views.',
           photo: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=85',
           link: '#contactSection'
         },
         {
           id: 4,
           category: 'villa',
-          categoryLabel: 'লাক্সারি ভিলা',
-          title: 'ভার্টিক্যাল গ্রিন বায়োফিলিক ম্যানশন',
-          desc: 'প্রকৃতির সাথে মিশে থাকা আধুনিক গ্রিন আর্কিটেকচার। ভার্টিক্যাল গার্ডেন ডেক ও এনার্জি-এফিশিয়েন্ট সোলার সিস্টেম।',
+          categoryLabel: 'Luxury Villa',
+          title: 'Vertical Green Biophilic Mansion',
+          desc: 'Seamless organic architecture integrating vertical suspended botanic gardens, cantilevered terraces, and passive net-zero solar engineering.',
           photo: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=85',
           link: '#contactSection'
         },
         {
           id: 5,
           category: 'renovation',
-          categoryLabel: 'রিনোভেশন',
-          title: 'হেরিটেজ এস্টেট মডার্ন রিনোভেশন',
-          desc: 'পুরাতন কাঠামোর শক্তি অক্ষুণ্ণ রেখে সম্পূর্ণ আধুনিক ওপেন-কনসেপ্ট ফ্লোর প্ল্যানে রূপান্তর ও বিলাসবহুল পুনর্নির্মাণ।',
+          categoryLabel: 'Modern Renovation',
+          title: 'Heritage Estate Architectural Metamorphosis',
+          desc: 'Preserving historical structural integrity while executing a comprehensive open-concept architectural remodel with bespoke luxury detailing.',
           photo: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=85',
           link: '#contactSection'
         },
         {
           id: 6,
           category: 'commercial',
-          categoryLabel: 'কমার্শিয়াল টাওয়ার',
-          title: 'অরিয়ন বিজনেস সেন্টার ও রিটেল মল',
-          desc: 'আন্তর্জাতিক মানের আধুনিক রিটেল স্পেস, টেরাকোটা ফাসাদ ও স্টেট-অব-দ্য-আর্ট আইটি পার্ক অবকাঠামো।',
-          photo: 'https://images.unsplash.com/photo-1541888946425-d0fbb186f5f7?auto=format&fit=crop&w=800&q=85',
+          categoryLabel: 'Commercial Tower',
+          title: 'Orion Global Financial Centre',
+          desc: 'State-of-the-art corporate headquarters featuring column-free floor plates, high-speed destination dispatch elevators, and thermal glass skin.',
+          photo: 'https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=800&q=85',
+          link: '#contactSection'
+        },
+        {
+          id: 7,
+          category: 'penthouse',
+          categoryLabel: 'Penthouse Interior',
+          title: 'The Sovereign Presidential Suite',
+          desc: 'Custom sculptural bronze chandeliers, bookmatched statuario marble slabs, and minimalist architectural lighting creating ethereal living spaces.',
+          photo: 'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=85',
+          link: '#contactSection'
+        },
+        {
+          id: 8,
+          category: 'renovation',
+          categoryLabel: 'Modern Renovation',
+          title: 'Brutalist Concrete to Glass Residence',
+          desc: 'Structural transformation converting 1980s load-bearing masonry into dramatic steel-framed floor-to-ceiling glass expanses.',
+          photo: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=85',
           link: '#contactSection'
         }
       ];
@@ -115,7 +133,7 @@
               </div>
               <div class="card-footer-action">
                 <a href="${proj.link}" class="card-read-link">
-                  <span>প্রজেক্টের বিস্তারিত দেখুন</span>
+                  <span>Explore Project Details</span>
                   <i class="fas fa-arrow-right"></i>
                 </a>
               </div>

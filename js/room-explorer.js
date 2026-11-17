@@ -27,92 +27,92 @@
       this.rooms = {
         drawing: {
           id: 'drawing',
-          name: 'লাক্সারি গ্র্যান্ড ড্রয়িং ও লিভিং লাউঞ্জ',
-          category: 'গ্রাউন্ড লেভেল / প্রাইম জোন',
+          name: 'Grand Drawing & Formal Living Lounge',
+          category: 'Ground Level / Primary Entertaining',
           image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=85',
           zoomOrigin: { x: '38%', y: '52%' },
           specs: [
-            { label: 'আয়তন', val: '১,২৫০ Sq.Ft' },
-            { label: 'সিলিং উচ্চতা', val: '১৩.৫ ফিট' },
-            { label: 'ফ্লোরিং', val: 'ইতালিয়ান ক্যালাকাট্টা মার্বেল' },
-            { label: 'লাইটিং', val: 'ডালি-স্মার্ট ডিমেবল' }
+            { label: 'Area', val: '1,250 Sq.Ft' },
+            { label: 'Ceiling Height', val: '13.5 Feet' },
+            { label: 'Flooring', val: 'Italian Calacatta Marble' },
+            { label: 'Lighting', val: 'DALI Smart Dimmable' }
           ],
           features: [
-            { top: '65%', left: '42%', text: 'ইতালিয়ান ক্যালাকাট্টা মার্বেল মেঝে' },
-            { top: '48%', left: '26%', text: 'কাস্টম লেদার মডুলার সোফা' },
-            { top: '24%', left: '55%', text: 'আর্কিটেকচারাল ব্রাস পেন্ড্যান্ট' }
+            { top: '65%', left: '42%', text: 'Bookmatched Calacatta Marble' },
+            { top: '48%', left: '26%', text: 'Custom Modular Italian Leather Lounge' },
+            { top: '24%', left: '55%', text: 'Architectural Brushed Brass Pendants' }
           ]
         },
         dining: {
           id: 'dining',
-          name: 'গ্র্যান্ড ব্যাঙ্কোয়েট ডাইনিং স্পেস',
-          category: 'ফার্স্ট লেভেল / ডাইনিং জোন',
+          name: 'Grand Banquet Dining Hall',
+          category: 'First Level / Dining Zone',
           image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1600&q=85',
           zoomOrigin: { x: '68%', y: '62%' },
           specs: [
-            { label: 'আয়তন', val: '৮৫০ Sq.Ft' },
-            { label: 'ক্যাপাসিটি', val: '১০ সিটার ডাইনিং' },
-            { label: 'টেবিল টপ', val: 'সলিড আমেরিকান ভ্যালনাট' },
-            { label: 'গ্লাস ভিউ', val: 'গার্ডেন টেরেস ফেসিং' }
+            { label: 'Area', val: '850 Sq.Ft' },
+            { label: 'Capacity', val: '10-Seater Dining' },
+            { label: 'Tabletop', val: 'Solid American Walnut' },
+            { label: 'Orientation', val: 'Garden Terrace Facing' }
           ],
           features: [
-            { top: '62%', left: '50%', text: '১০ সিটের কাস্টম সলিড উড টেবিল' },
-            { top: '28%', left: '52%', text: 'ব্রাশড ব্রাস আর্কিটেকচারাল ঝাড়বাতি' },
-            { top: '44%', left: '80%', text: 'ব্যাকলিট প্রিমিয়াম ওয়াইন ক্যাবিনেট' }
+            { top: '62%', left: '50%', text: 'Solid American Walnut Table' },
+            { top: '28%', left: '52%', text: 'Brushed Brass Chandelier' },
+            { top: '44%', left: '80%', text: 'Backlit Climate-Controlled Wine Cellar' }
           ]
         },
         bedroom: {
           id: 'bedroom',
-          name: 'মাস্টার সুইট পেন্টহাউস বেডরুম',
-          category: 'টপ ফ্লোর / প্রাইভেট হেভেন',
+          name: 'Master Suite Penthouse Bedroom',
+          category: 'Top Floor / Private Sanctuary',
           image: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=85',
           zoomOrigin: { x: '62%', y: '32%' },
           specs: [
-            { label: 'আয়তন', val: '৯৫০ Sq.Ft' },
-            { label: 'ফ্লোরিং', val: 'আমেরিকান ওক হার্ডউড' },
-            { label: 'ব্যালকনি', val: 'প্রাইভেট স্কাইলাইন টেরেস' },
-            { label: 'অ্যাকোস্টিক', val: 'সাউন্ডপ্রুফ ডাবল ওয়াল' }
+            { label: 'Area', val: '950 Sq.Ft' },
+            { label: 'Flooring', val: 'American White Oak Hardwood' },
+            { label: 'Balcony', val: 'Private Skyline Terrace' },
+            { label: 'Acoustics', val: 'Sound-Isolated Double Envelope' }
           ],
           features: [
-            { top: '60%', left: '48%', text: 'কিং সাইজ আল্ট্রা-লাক্সারি বেড' },
-            { top: '35%', left: '78%', text: 'ফ্লোর-টু-সিলিং সিটি ভিউ উইন্ডো' },
-            { top: '45%', left: '20%', text: 'হ্যান্ডক্রাফটেড অ্যাকোস্টিক হেডবোর্ড' }
+            { top: '60%', left: '48%', text: 'King-Size Upholstered Platform Bed' },
+            { top: '35%', left: '78%', text: 'Floor-to-Ceiling Skyline Glazing' },
+            { top: '45%', left: '20%', text: 'Handcrafted Fluted Acoustic Headboard' }
           ]
         },
         kitchen: {
           id: 'kitchen',
-          name: 'মডার্ন ওপেন শেফ কিচেন ও আইল্যান্ড',
-          category: 'গ্রাউন্ড লেভেল / সার্ভিস জোন',
+          name: 'Modern Open Chef Kitchen & Island',
+          category: 'Ground Level / Culinary Studio',
           image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1600&q=85',
           zoomOrigin: { x: '22%', y: '72%' },
           specs: [
-            { label: 'আয়তন', val: '৬৫০ Sq.Ft' },
-            { label: 'কাউন্টারটপ', val: 'সিলিকন কোয়ার্টজ' },
-            { label: 'ক্যাবিনেট', val: 'জার্মান সফট-ক্লোজ' },
-            { label: 'অ্যাপ্লায়েন্স', val: 'ইন্টিগ্রেটেড হিডেন প্যানেল' }
+            { label: 'Area', val: '650 Sq.Ft' },
+            { label: 'Countertop', val: 'Calacatta Silestone Quartz' },
+            { label: 'Cabinetry', val: 'German Soft-Close Matte Lacquer' },
+            { label: 'Appliances', val: 'Miele Integrated Hidden Panels' }
           ],
           features: [
-            { top: '62%', left: '46%', text: 'মার্বেল সেন্ট্রাল কিচেন আইল্যান্ড' },
-            { top: '38%', left: '25%', text: 'সফট-ক্লোজ স্মার্ট ক্যাবিনেট্রি' },
-            { top: '42%', left: '75%', text: 'বিল্ট-ইন ইনভার্টার ওভেন ও হাব' }
+            { top: '62%', left: '46%', text: 'Waterfall Quartz Central Island' },
+            { top: '38%', left: '25%', text: 'Smart Handleless Cabinetry' },
+            { top: '42%', left: '75%', text: 'Integrated Induction Hob & Steam Oven' }
           ]
         },
         rooftop: {
           id: 'rooftop',
-          name: 'রুফটপ ইনফিনিটি লাউঞ্জ ও স্কাই গার্ডেন',
-          category: 'রুফটপ লেভেল / ওপেন এয়ার',
+          name: 'Rooftop Infinity Lounge & Sky Deck',
+          category: 'Rooftop Level / Open Sky Terrace',
           image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=85',
           zoomOrigin: { x: '45%', y: '18%' },
           specs: [
-            { label: 'আয়তন', val: '২,২০০ Sq.Ft' },
-            { label: 'পুল', val: 'হিটেড ইনফিনিটি এজ' },
-            { label: 'ডেকিং', val: 'ওয়েদারপ্রুফ টিক উড' },
-            { label: 'ভিউ', val: '৩৬০° প্যানোরামিক স্কাইলাইন' }
+            { label: 'Area', val: '2,200 Sq.Ft' },
+            { label: 'Pool', val: 'Heated Infinity Edge Pool' },
+            { label: 'Decking', val: 'Weatherproof Teak Hardwood' },
+            { label: 'Panoramas', val: '360° Unobstructed Skyline' }
           ],
           features: [
-            { top: '70%', left: '38%', text: 'ইনফিনিটি এজ সুইমিং পুল' },
-            { top: '55%', left: '72%', text: 'আউটডোর লাউঞ্জ সিটিং' },
-            { top: '30%', left: '48%', text: 'বায়োফিলিক সানসেট স্কাই গার্ডেন' }
+            { top: '70%', left: '38%', text: 'Cantilevered Infinity Pool' },
+            { top: '55%', left: '72%', text: 'Sunken Lounge Firepit' },
+            { top: '30%', left: '48%', text: 'Biophilic Sunset Sky Garden' }
           ]
         }
       };

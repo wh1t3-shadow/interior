@@ -24,41 +24,41 @@
       this.videos = [
         {
           id: 0,
-          title: "ওয়াকথ্রু ০১: শোভা প্রিভি কালেকশন — আল্ট্রা-লাক্সারি স্কাই পেন্টহাউস",
-          desc: "ডাবল-হাইট সিলিং, গ্র্যান্ড মার্বেল ডাইনিং এবং মেঝে থেকে ছাদ পর্যন্ত প্যানোরামিক ওশান ভিউ সম্বলিত সিগনেচার স্পেস।",
-          duration: "০০:১২ মিনিট",
+          title: "Walkthrough 01: Sobha Privy Collection — Ultra-Luxury Sky Penthouse",
+          desc: "Double-height architectural volume, bespoke Italian bookmatched marble, and floor-to-ceiling panoramic ocean vistas.",
+          duration: "00:12 min",
           src: "assets/videos/sobha-teaser.mp4",
           poster: "assets/videos/sobha-poster.jpg"
         },
         {
           id: 1,
-          title: "স্ক্যান ০২: মেগা বিল্ডিং কনস্ট্রাকশন ও সুপার-স্ট্রাকচার ড্রোন স্ক্যান",
-          desc: "সম্পূর্ণ মাল্টি-স্টোরি বিল্ডিং কনস্ট্রাকশন সাইট, স্টিল ফ্রেম স্ট্রাকচার, মেগা ক্রেন ও চারপাশের ৩৬০ ডিগ্রি এরিয়াল ড্রোন স্ক্যান।",
-          duration: "০০:৩৫ মিনিট",
+          title: "Scan 02: Mega High-Rise Concrete Superstructure & Crane Scan",
+          desc: "Full multi-story reinforced concrete core, tower crane maneuvering, and 360-degree perimeter structural inspection.",
+          duration: "00:35 min",
           src: "assets/videos/construction-drone-scan.mp4",
-          poster: "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=1400&q=85"
+          poster: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=85"
         },
         {
           id: 2,
-          title: "স্ক্যান ০৩: আল্ট্রা-লাক্সারি ভিলা, রুফটপ ও আউটডোর সুইমিং পুল",
-          desc: "মডার্ন আর্কিটেকচারাল ভিলা, ব্যক্তিগত সুইমিং পুল, টেরেস ও সুসজ্জিত গার্ডেন প্যান্ডেল সহ সম্পূর্ণ এক্সটেরিয়র স্ক্যান।",
-          duration: "০০:১৭ মিনিট",
+          title: "Scan 03: Ultra-Luxury Architectural Villa & Private Swimming Pool",
+          desc: "Modern cantilevered estate, travertine pool deck, outdoor fire pit, and bespoke landscaped perimeter gardens.",
+          duration: "00:17 min",
           src: "assets/videos/villa-pool-scan.mp4",
           poster: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1400&q=85"
         },
         {
           id: 3,
-          title: "স্ক্যান ০৪: হাই-রাইজ স্কাইস্ক্র্যাপার টাওয়ার নির্মাণ টাইম-ল্যাপ্স",
-          desc: "আকাশচুম্বী মেগা টাওয়ারের ফ্লোর নির্মাণ, ক্রেন অপারেশন এবং চারপাশের আধুনিক সিটি আর্কিটেকচার ওভারভিউ।",
-          duration: "০০:১০ মিনিট",
+          title: "Scan 04: Skyscraper Tower Construction & Structural Facade Timelapse",
+          desc: "Rapid vertical floor progression, curtain wall installation, and structural engineering in an urban metropolis.",
+          duration: "00:10 min",
           src: "assets/videos/skyscraper-construction.mp4",
           poster: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=85"
         },
         {
           id: 4,
-          title: "স্ক্যান ০৫: রুফটপ লাউঞ্জ ও সুইমিং পুল এরিয়াল ভিউ",
-          desc: "ক্রিস্টাল ব্লু রুফটপ পুল, লাউঞ্জ সানবেড এবং রিভার্স আর্কিটেকচারাল ভিউ-এর ওপর থেকে ৩৬০ ডিগ্রি এরিয়াল শট।",
-          duration: "০০:১৫ মিনিট",
+          title: "Scan 05: Rooftop Sky Lounge & Infinity Pool Aerial Elevation",
+          desc: "Crystal blue elevated rooftop pool, private cabanas, and panoramic city skyline views captured via high-definition drone.",
+          duration: "00:15 min",
           src: "assets/videos/pool-aerial-scan.mp4",
           poster: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1400&q=85"
         }
@@ -78,7 +78,7 @@
       // Update text info
       this.$videoTitle.text(vid.title);
       this.$videoDesc.text(vid.desc);
-      this.$videoBadge.text(`ভিডিও ${index + 1} / ${this.videos.length}`);
+      this.$videoBadge.text(`Video ${index + 1} / ${this.videos.length}`);
 
       // Update active milestone tab
       $('.real-step-card').removeClass('active');
